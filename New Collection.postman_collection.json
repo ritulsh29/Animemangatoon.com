@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "a799a1eb-93fa-460a-8a45-4968433cd910",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38038736"
+	},
+	"item": [
+		{
+			"name": "Webtoons1",
+			"item": [
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"title\": \"Webtoons\",\r\n    \"description\": \"Webtoons characters\",\r\n    \"characters\": [\r\n       {\r\n          \"name\":  \"Top Notch\",\r\n          \"role\": \"Top Notch is a Mer Hermit Crab with a unique crab shell that he has adjusted to hold his extensive collection of scrolls and historical artifacts. He displays a strong interest in history and is known for being a curious individual. His love for ancient scrolls and knowledge drives much of the narrative story. With profound intellect, he comes across as somewhat unsocial. Thus, it is an essential source of background information on past events and their enigmas for characters in the play. He is friends with Siren’s Fathe Shoa.The presence of dynamic Castle Swimmer characters enriches its plotline and adds layers of complexity to it. Every single one, from Kappa’s brave journey to Skiff showing ultimate loyalty, is fundamental to shaping the narrative at large. Let us know your thoughts on the Castle Swimmer webtoon in the comments below.\"\r\n       }\r\n    ]\r\n }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/api/v1/product/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get/webtoons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/api/v1/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/api/v1/product/670d3b675ee0e7fe4c6d9ee6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"670d3b675ee0e7fe4c6d9ee6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
